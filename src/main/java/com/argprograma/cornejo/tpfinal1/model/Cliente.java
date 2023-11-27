@@ -7,6 +7,7 @@ import lombok.Data;
 import lombok.RequiredArgsConstructor;
 
 @Data
+
 @Entity
 @Table(name="cliente")
 @AllArgsConstructor
@@ -20,5 +21,7 @@ public class Cliente {
 	    private String email;
 	    private String cuit;
 	    private String razonSocial;
-	    private List<Servicio> serviciosContratados; 
+	    private List<Servicio> serviciosContratados;
+
+
 }

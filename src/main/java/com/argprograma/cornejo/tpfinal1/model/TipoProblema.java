@@ -9,11 +9,13 @@ import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
 @Data
 @Entity
 @Table(name="tipoProblema")
+@AllArgsConstructor
 public class TipoProblema {
 	 @Id
 	    @GeneratedValue(strategy = GenerationType.IDENTITY)
