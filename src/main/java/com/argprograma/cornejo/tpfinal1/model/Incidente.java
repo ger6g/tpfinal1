@@ -1,6 +1,7 @@
 package com.argprograma.cornejo.tpfinal1.model;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.experimental.FieldDefaults;
 
@@ -12,6 +13,7 @@ import java.util.List;
 @Entity
 @Table(name = "incidente")
 @Data
+@AllArgsConstructor
 public class Incidente {
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
